@@ -22,5 +22,5 @@ def reduce(s, sp=nil)
     retVal = yield(retVal, s[i])
     i += 1
   end
-  retVal
+  return retVal
 end
