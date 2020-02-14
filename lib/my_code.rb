@@ -1,13 +1,13 @@
 # Your Code Here
 
 def map(s)
-  new = []
+  retVal = []
   i = 0
   while i < s.length
-    new.push(yield(s[i]))
+    retVal.push(yield(s[i]))
     i += 1
   end
-  new
+  return retVal
 end
 
 def reduce(s, sp=nil)
